@@ -8,10 +8,9 @@ import Trabajos from "./pages/Trabajos";
 import TipoDetrabajos from "./pages/TipoDeTrabajos";
 import Turnos from "./pages/Turnos";
 import Logout from "./pages/Logout";
-import {useState} from "react"
 
 function App() {
-  const [data, setData] = useState([]);
+
   return (
     <>
       <Router>

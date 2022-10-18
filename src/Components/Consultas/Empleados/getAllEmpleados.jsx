@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const GetAllEmpleados = () => {
-  //const [empleados, setEmpleados] = useState([]);
 
   const styles = useStyles();
   const [data, setData] = useState([]);
@@ -183,7 +182,6 @@ const GetAllEmpleados = () => {
       <br />
       <TextField
         name="password"
-        type='password' 
         className={styles.inputMaterial}
         label="Password"
         onChange={handleChange}
@@ -310,7 +308,7 @@ const GetAllEmpleados = () => {
   return (
     <div className="App">
       <br />
-      <Button onClick={() => abrirCerrarModalInsertar()}>Insertar</Button>
+      <Button variant="contained" onClick={() => abrirCerrarModalInsertar()}>Insertar</Button>
       <br />
       <br />
       <TableContainer>
@@ -325,6 +323,7 @@ const GetAllEmpleados = () => {
               <TableCell>Email</TableCell>
               <TableCell >Password</TableCell>
               <TableCell>Especialidad</TableCell>
+              <TableCell>Avatar</TableCell>
               <TableCell>Acciones</TableCell>
             </TableRow>
           </TableHead>

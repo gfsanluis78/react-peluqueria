@@ -1,9 +1,5 @@
-import React,{useState, useEffect} from 'react'
-import axios from 'axios';
+import React from 'react'
 import {GetAllEmpleados} from "../Components/Consultas/Empleados/getAllEmpleados"
-
-const baseUrl='http://localhost:3001/'
-
 
 function empleados() {
 
