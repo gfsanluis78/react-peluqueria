@@ -9,8 +9,8 @@ import TipoDetrabajos from "./pages/TipoDeTrabajos";
 import Turnos from "./pages/Turnos";
 import Logout from "./pages/Logout";
 
-function App() {
 
+function App() {
   return (
     <>
       <Router>
