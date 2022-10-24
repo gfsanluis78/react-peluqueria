@@ -1,5 +1,5 @@
 import React from 'react'
-import {GetAllEmpleados} from "../Components/Consultas/Empleados/getAllEmpleados"
+import {GetAllEmpleados} from "../components/Consultas/Empleados/getAllEmpleados"
 
 function empleados() {
 

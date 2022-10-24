@@ -1,13 +1,10 @@
 import React from "react";
-import { CssVarsProvider } from "@mui/joy/styles";
-import Sheet from "@mui/joy/Sheet";
 
-
-function Home() {
+function Login() {
   return (
     <>
     </>
   );
 }
 
-export default Home;
+export default Login;
