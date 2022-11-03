@@ -77,8 +77,14 @@ function Login() {
         }
       ).then((response) => {
         console.log("La respuesta es " + JSON.stringify(response?.data));
+        const accessToken = response?.data?.accessToken;
+        console.log(JSON.stringify(accessToken));
+        const roles = response?.data?.roles;
+        console.log(JSON.stringify(response?.data?.roles));
+        setAuth({ email, password, roles, accessToken });
         setEmail("");
         setPassword("");
+        navigate(from, { replace: true });
       });
     } catch (err) {
       if (!err?.response) {
@@ -92,7 +98,6 @@ function Login() {
       }
       errRef.current.focus();
       console.log("Los datos son " + { email, password });
-      
     }
   };
 

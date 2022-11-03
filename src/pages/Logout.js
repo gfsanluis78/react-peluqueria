@@ -1,10 +1,11 @@
 import React from 'react'
+import Logout from "../components/Logout"
 
 function logout() {
   return (
-    <div className='logout'>
-      <h1>Logout</h1>
-    </div>
+    <section>
+      <Logout/>
+    </section>
   )
 }
 
