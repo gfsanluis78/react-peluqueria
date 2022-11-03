@@ -14,6 +14,7 @@ import {
 } from "@material-ui/core";
 import { Edit, Delete } from "@material-ui/icons";
 import API from "../../api";
+import { height } from "@mui/system";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -268,13 +269,8 @@ const GetAllEmpleados = () => {
         value={empleadoSeleccionado && empleadoSeleccionado.especialidad}
       />
       <br />
-      <TextField
-        name="avatar"
-        className={styles.inputMaterial}
-        label="Avatar"
-        onChange={handleChange}
-        value={empleadoSeleccionado && empleadoSeleccionado.avatar}
-      />
+      <img alt="Logo" src={ "http://192.168.1.111:45455/" + empleadoSeleccionado.avatar} />
+        
       <br />
       <br />
       <div align="right">
@@ -339,7 +335,7 @@ const GetAllEmpleados = () => {
                 <TableCell >{empleado.email}</TableCell>
                 <TableCell >{empleado.password}</TableCell>
                 <TableCell>{empleado.especialidad}</TableCell>
-                <TableCell>{empleado.avatar}</TableCell>
+                <img alt="Logo" height={"50%"} width={"50%"} src={ "http://192.168.1.111:45455/" + empleado.avatar } />
                 <TableCell>
                   <Edit
                     className={styles.iconos}
